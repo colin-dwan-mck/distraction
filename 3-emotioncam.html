@@ -153,8 +153,8 @@ const model = await tf.loadLayersModel(handler); -->
                 faceLandmarksDetection.SupportedPackages.mediapipeFacemesh
             );
             // Load Emotion Detection
-            // emotionModel = await tf.loadLayersModel( 'web/model/facemo.json' );
-            emotionModel = await tf.loadLayersModel('http://localhost:8080/web/model/facemo.json' );
+            emotionModel = await tf.loadLayersModel( 'web/model/facemo.json' );
+            // emotionModel = await tf.loadLayersModel('http://localhost:8080/web/model/facemo.json' );
 
             setText( "Loaded!" );
 
