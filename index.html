@@ -3,6 +3,7 @@
         <title>Distraction Detector</title>
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection@0.0.1/dist/face-landmarks-detection.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Kevnz/stats.js/build/stats.min.js"></script>
     </head>
 
     <body>
@@ -14,9 +15,9 @@
             ">
         </video>
         <h1 id="status">Loading...</h1>
-        <script>
+        <script type="module">
         var stats = new Stats();
-        stat.showPanel(0);
+        stats.showPanel(0);
         document.body.appendChild(stats.dom);
 
         function setText( text ) {
@@ -127,7 +128,7 @@
             }
 
             stats.end();
-            
+
             requestAnimationFrame( trackFace );
         }
 
