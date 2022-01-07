@@ -37,6 +37,7 @@
     "g": "^2.0.1",
     "http": "^0.0.1-security",
     "server": "^1.0.37",
+    "stats.js": "^0.17.0",
     "webwebweb": "^1.4.0"
   },
   "nodemonConfig": {
